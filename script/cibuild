@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+#
+# Install the files and run htmlproof.
+#
+# Author: Justin Hartman <justin@22digital.co.za>
+# Version: 1.0.0
+# Copyright (c) 2020 Justin Hartman <https://22digital.co.za>
+#
+
+# halt script on error
+set -e
+
+#######################################
+# Install and build the site.
+# Globals:
+#   None
+# Arguments:
+#   None
+# Returns:
+#   None
+#######################################
+build() {
+    gem install jekyll html-proofer sass --no-user-install
+    bundle exec jekyll build
+}
+
+#######################################
+# Run htmlproof to validate site.
+# Globals:
+#   None
+# Arguments:
+#   None
+# Returns:
+#   None
+#######################################
+proof() {
+    bundle exec htmlproofer ./_site \
+        --disable-external \
+        --allow-hash-href
+}
+
+build
+proof

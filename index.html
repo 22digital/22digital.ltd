@@ -1,0 +1,131 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <meta name="author" content="{{ page.author }}"/>
+    <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ site.url }}/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/img/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="{{ site.url }}/img/favicons/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ site.url }}/img/favicons/android-chrome-192x192.png">
+    <link rel="manifest" href="{{ site.url }}/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="{{ site.url }}/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="22 Digital">
+    <meta name="application-name" content="22 Digital">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-TileImage" content="{{ site.url }}/img/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="{{ site.url }}/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffc40d">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/normalize.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/22digital.css"/>
+    <!--[if IE]>
+    <script type="text/javascript" src="{{ site.url }}/js/vendors/html5.min.js"></script>
+    <![endif]-->
+    <script>
+        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+            var root = document.getElementsByTagName('html')[0];
+            root.setAttribute('class', 'ff');
+        }
+    </script>
+</head>
+<body class="body">
+<div class="container">
+    <header class="header">
+        <h1>
+            <a href="{{ site.url }}" title="22 Digital Website Design and Website Development" rel="index" class="home">
+                <img src="{{ site.url }}{{ site.logo }}" alt="22 Digital Website Design and Website Development" width="125" height="125">
+            </a>
+            <span>{{ site.description }}</span>
+        </h1>
+        <nav class="links">
+            <a href="mailto:hello@22digital.co.za?Subject=Website&nbsp;Contact&body=I&nbsp;would&nbsp;like&nbsp;to&nbsp;discuss..." class="contact" title="Contact 22 Digital" rel="nofollow">
+                <i class="fas fa-at fa-3x blue-two"></i>
+            </a>
+            <a href="{{ site.url }}/feed.xml" class="feed" title="Subscribe to Atom feed" rel="index">
+                <i class="fas fa-rss-square fa-3x blue-two"></i>
+            </a>
+            <a href="https://tinyletter.com/22digital" target="_blank" class="newsletter" title="Subscribe to Newsletter" rel="noindex, nofollow">
+                <i class="far fa-comments fa-3x blue-two"></i>
+            </a>
+            <a href="https://t.me/team22digital" target="_blank" class="telegram" title="Get Support on Telegram" rel="noindex, nofollow">
+                <i class="fab fa-telegram fa-3x blue-two"></i>
+            </a>
+            <a href="https://github.com/22digital" target="_blank" class="github" title="Our source code on GitHub" rel="noindex, nofollow">
+                <i class="fab fa-github fa-3x blue-two"></i>
+            </a>
+            <a href="https://twitter.com/22DigitalAgency" target="_blank" class="twitter" title="Follow us on Twitter" rel="noindex, nofollow">
+                <i class="fab fa-twitter fa-3x blue-two"></i>
+            </a>
+        </nav>
+        <!-- <hr class="pink-three"> -->
+        <h1 class="heading blue-one">22 Digital Client Projects</h1>
+        <p class="text">View our latest client work by clicking on an image below. Each project provides detail on the client brief, the <strong>digital strategy</strong> employed, and the type of <strong>website design</strong>, <strong>website development</strong>, and <strong>digital marketing</strong> work we completed.</p>
+    </header>
+    <div class="content">
+        <!-- trianglify pattern container -->
+        <div class="pattern pattern--hidden"></div>
+        <!-- cards -->
+        <div class="wrapper">
+            {% for post in site.posts %}
+            <div class="card" data-id="{{ post.id }}">
+                <div class="card__container card__container--closed">
+                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200"
+                         preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                            <clipPath id="{{ post.id }}-clip-path">
+                                <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                            </clipPath>
+                        </defs>
+                        <image clip-path="url({{ site.url }}/#{{ post.id }}-clip-path)" width="1920" height="1200"
+                               xlink:href="{{ site.url }}{{ post.image }}"></image>
+                    </svg>
+                    <div class="card__content">
+                        <i class="card__btn-close fa fa-times"></i>
+                        <div class="card__caption">
+                            <h2 class="card__title">{{ post.title }}</h2>
+                            <p class="card__subtitle">{{ post.subtitle }}</p>
+                        </div>
+                        <div class="card__copy">
+                            <div class="meta">
+                                <img class="meta__avatar" src="{{ site.url }}{{ post.avatar }}" alt="Author" />
+                                <span class="meta__author">{{ post.author }}</span>
+                                <span class="meta__date">{{ post.date | date: "%Y-%m-%d" }}</span>
+                            </div>
+                            {{ post.content }}
+                            <i class="card__btn-close btn-close-bottom fa fa-times">&nbsp; Close Page</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- /cards -->
+        </div>
+    </div>
+    <!-- /container -->
+</div>
+<!-- JS -->
+<script src="{{ site.url }}/js/vendors/trianglify.min.js"></script>
+<script src="{{ site.url }}/js/vendors/TweenMax.min.js"></script>
+<script src="{{ site.url }}/js/vendors/ScrollToPlugin.min.js"></script>
+<script src="{{ site.url }}/js/vendors/cash.min.js"></script>
+<script src="{{ site.url }}/js/card-modern-blog.js"></script>
+<script src="{{ site.url }}/js/modern-blog.js"></script>
+</body>
+</html>

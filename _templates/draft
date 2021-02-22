@@ -1,0 +1,15 @@
+---
+title: {{ title }}
+date: {{ date }}
+last_modified_at: {{ date }}
+permalink: "/projects/{{ slug }}.html"
+subtitle: {{ slug }}
+author: Justin Hartman
+avatar: "/img/authors/me.jpeg"
+image: "/img/projects/{{ slug }}.jpg"
+published: false
+categories:
+- projects
+tags:
+- projects
+---

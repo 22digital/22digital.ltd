@@ -1,0 +1,60 @@
+---
+title: 22 Digital
+timezone: Africa/Johannesburg
+collections:
+  pages:
+    title: Pages
+    output: true
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+description: 22 Digital is a different kind of digital website design and
+  development agency. <br>We don't just work for money, nor with simply anyone.
+  <br>Our mission is to change the world. If that's yours; let's talk.
+tagline: Website Design, Website Development Cape Town South Africa
+logo: "/img/logo/22digital-agency.svg"
+twitter:
+  username: 22DigitalAgency
+  card: summary
+locale: en_GB
+baseurl: ''
+url: https://ww.22digital.ltd
+permalink: "/:title"
+markdown: kramdown
+exclude:
+- ".github"
+- ".sass-cache"
+- _site
+- ".gitignore"
+- ".travis.yml"
+- CHANGELOG.md
+- CNAME
+- CODE_OF_CONDUCT.md
+- CONTRIBUTING.md
+- Gemfile
+- Gemfile.lock
+- LICENSE
+- README.md
+- _templates
+- vendor
+plugins:
+- jemoji
+- jekyll-mentions
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-last-modified-at
+- jekyll-redirect-from
+jekyll-mentions:
+  base_url: https://github.com
+post_ext: md
+page_ext: md
+post_layout:
+page_layout:
+titlecase: true
+post_template: post
+page_template: page
+draft_template: draft

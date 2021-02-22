@@ -1,0 +1,65 @@
+{
+  "name": "22 Digital",
+  "short_name": "22 Digital",
+  "icons": [
+    {
+      "density": 0.75,
+      "sizes": "36x36",
+      "src": "/img/favicons/android-chrome-36x36.png",
+      "type": "image/png"
+    },
+    {
+      "density": 1.0,
+      "sizes": "48x48",
+      "src": "/img/favicons/android-chrome-48x48.png",
+      "type": "image/png"
+    },
+    {
+      "density": 1.5,
+      "sizes": "72x72",
+      "src": "/img/favicons/android-chrome-72x72.png",
+      "type": "image/png"
+    },
+    {
+      "density": 2.0,
+      "sizes": "96x96",
+      "src": "/img/favicons/android-chrome-96x96.png",
+      "type": "image/png"
+    },
+    {
+      "density": 3.0,
+      "sizes": "144x144",
+      "src": "/img/favicons/android-chrome-144x144.png",
+      "type": "image/png"
+    },
+    {
+      "density": 4.0,
+      "sizes": "192x192",
+      "src": "/img/favicons/android-chrome-192x192.png",
+      "type": "image/png"
+    },
+    {
+      "density": 1.5,
+      "sizes": "256x256",
+      "src": "/img/favicons/android-chrome-256x256.png",
+      "type": "image/png"
+    },
+    {
+      "density": 3.0,
+      "sizes": "384x384",
+      "src": "/img/favicons/android-chrome-384x384.png",
+      "type": "image/png"
+    },
+    {
+      "density": 4.0,
+      "sizes": "512x512",
+      "src": "/img/favicons/android-chrome-512x512.png",
+      "type": "image/png"
+    }
+  ],
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "https://22digital.co.za/",
+  "theme_color": "#ffc40d",
+  "background_color": "#ffc40d"
+}
