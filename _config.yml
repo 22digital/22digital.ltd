@@ -21,7 +21,7 @@ twitter:
   card: summary
 locale: en_GB
 baseurl: ''
-url: http://www.22digital.ltd
+url: http://22digital.ltd
 permalink: "/:title"
 markdown: kramdown
 exclude:
