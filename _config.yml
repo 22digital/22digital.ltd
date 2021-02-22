@@ -14,14 +14,14 @@ collections:
 description: 22 Digital is a different kind of digital website design and
   development agency. <br>We don't just work for money, nor with simply anyone.
   <br>Our mission is to change the world. If that's yours; let's talk.
-tagline: Website Design, Website Development Cape Town South Africa
+tagline: Website Design, Mobile Apps London United Kingdom
 logo: "/img/logo/22digital-agency.svg"
 twitter:
   username: 22DigitalAgency
   card: summary
 locale: en_GB
 baseurl: ''
-url: https://www.22digital.ltd
+url: http://www.22digital.ltd
 permalink: "/:title"
 markdown: kramdown
 exclude:
