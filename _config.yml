@@ -1,6 +1,6 @@
 ---
 title: 22 Digital
-timezone: Africa/Johannesburg
+timezone: Europe/London
 collections:
   pages:
     title: Pages
@@ -21,7 +21,7 @@ twitter:
   card: summary
 locale: en_GB
 baseurl: ''
-url: https://ww.22digital.ltd
+url: https://www.22digital.ltd
 permalink: "/:title"
 markdown: kramdown
 exclude:
